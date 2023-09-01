@@ -112,7 +112,6 @@ class App extends Component {
       const nm = { chatRoomName, chatRoomId, chatMessage, chatUser }
       if (chatRoomId !== undefined) {
         this.setState(prev => ({ chatHistory: [...prev.chatHistory, nm] }))
-        return
       }
     } catch (error) {
       consoleLogger("error: ", error)
