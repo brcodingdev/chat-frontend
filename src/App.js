@@ -90,6 +90,9 @@ class App extends Component {
       .then((repos) => {
         const data = repos.data;
         consoleLogger(data)
+        if (!data.Chats) {
+          data.Chats = []
+        }
         try {
           this.setState(() => ({
             chatHistory: [...data.Chats],
