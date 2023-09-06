@@ -11,6 +11,8 @@ This React Chat Application is a user-friendly and interactive platform that all
 ## Usage
 Clone the repository to your local machine.
 ```bash
+npm install
+
 npm start
 # or
 yarn install
